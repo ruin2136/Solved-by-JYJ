@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+#include <memory>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+    ios_base::sync_with_stdio(false);   //C와 C++ 묶음을 해제
+    cin.tie(NULL);  // cin과 cout의 묶음을 해제
+    
+    int num;
+    cin >> num;
+
+    for (int i = 0; i < num; i++)
+    {
+        string str;
+        cin >> str;
+        cout << str.front();
+        cout << str.back()<<endl;
+    }
+}
